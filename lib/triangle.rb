@@ -26,7 +26,7 @@ class Triangle
        raise TriangleError
      elsif (@side1 + @side2 < @side3) || (@side2+@side3<@side1) ||
      (@side3 + @side1 < @side2)
-        raise StandardError
+        raise PartnerError
       end 
     end 
   class TriangleError < StandardError
